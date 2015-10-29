@@ -52,13 +52,13 @@ metadata {
 }
 
 private debug(data){
-    if(parent.appSettings.debug == "true"){
+    //if(parent.appSettings.debug == "true"){
         log.debug(data)
-    }
+    //}
 }
 
 private getAccessToken() {
-    return parent.appSettings.accessToken;
+    return "API_KEY_FROM_LIFX";
 }
 
 private sendCommand(path, method="GET", body=null) {
